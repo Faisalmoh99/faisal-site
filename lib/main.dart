@@ -1517,16 +1517,9 @@ class PortfolioApp extends StatelessWidget {
     bodyMedium: TextStyle(fontSize: 14, color: Colors.white70, height: 1.5),
     bodyLarge: TextStyle(fontSize: 16, color: Colors.white, height: 1.6),
   ),
-  // ✅ هذا هو التعديل المهم
-  cardTheme: CardTheme(
-    color: const Color(0xFF0F172A),
-    elevation: 0,
-    margin: EdgeInsets.zero,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(16),
-    ),
-  ),
+  
 ),
+
       home: const _Home(),
     );
   }
