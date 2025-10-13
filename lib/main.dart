@@ -1501,28 +1501,32 @@ class PortfolioApp extends StatelessWidget {
       title: "Faisal — AI/ML Engineer",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF0B1220),
-        colorScheme: const ColorScheme.dark(
-          primary: Color(0xFF22D3EE), // cyan
-          secondary: Color(0xFF7C3AED), // violet
-          surface: Color(0xFF0B1220),
-          onPrimary: Colors.black,
-        ),
-        textTheme: const TextTheme(
-          displayMedium: TextStyle(fontSize: 42, fontWeight: FontWeight.w800, letterSpacing: -.2),
-          headlineSmall: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
-          titleMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white70),
-          bodyMedium: TextStyle(fontSize: 14, color: Colors.white70, height: 1.5),
-          bodyLarge: TextStyle(fontSize: 16, color: Colors.white, height: 1.6),
-        ),
-        cardTheme: CardTheme(
-          color: const Color(0xFF0F172A),
-          elevation: 0,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          margin: EdgeInsets.zero,
-        ),
-      ),
+  useMaterial3: true,
+  brightness: Brightness.dark,
+  scaffoldBackgroundColor: const Color(0xFF0B1220),
+  colorScheme: const ColorScheme.dark(
+    primary: Color(0xFF22D3EE), // cyan
+    secondary: Color(0xFF7C3AED), // violet
+    surface: Color(0xFF0B1220),
+    onPrimary: Colors.black,
+  ),
+  textTheme: const TextTheme(
+    displayMedium: TextStyle(fontSize: 42, fontWeight: FontWeight.w800, letterSpacing: -.2),
+    headlineSmall: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+    titleMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white70),
+    bodyMedium: TextStyle(fontSize: 14, color: Colors.white70, height: 1.5),
+    bodyLarge: TextStyle(fontSize: 16, color: Colors.white, height: 1.6),
+  ),
+  // ✅ هذا هو التعديل المهم
+  cardTheme: CardTheme(
+    color: const Color(0xFF0F172A),
+    elevation: 0,
+    margin: EdgeInsets.zero,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(16),
+    ),
+  ),
+),
       home: const _Home(),
     );
   }
