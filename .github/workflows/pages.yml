@@ -33,6 +33,8 @@ jobs:
       - name: Build web (release)
         run: flutter build web --release
 
+      - name: Copy cv.pdf into build output
+        run: cp web/cv.pdf build/web/cv.pdf
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
