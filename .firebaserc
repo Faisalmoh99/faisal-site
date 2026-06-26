@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "faisal--site",
+    "faisal": "faisal--site"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
